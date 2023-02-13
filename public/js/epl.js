@@ -147,7 +147,6 @@ for (let eplTeam of eplTeams) {
 
     const topScorerEl = document.createElement("p");
     topScorerEl.innerText = "Top Scorer: " + eplTeam.topScorer;
-    topScorerEl.classList.add("scorer");
 
     const valueEl = document.createElement("p");
     valueEl.innerText = "Team Value: " + eplTeam.value;
