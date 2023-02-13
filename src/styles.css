@@ -6,3 +6,15 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.box {
+    @apply border-black px-3 py-3 rounded-3xl shadow-2xl bg-slate-800 w-full flex justify-center items-center flex-col font-middle
+}
+
+.img {
+    @apply rounded-xl h-60
+}
+
+.name {
+    @apply font-bold
+}

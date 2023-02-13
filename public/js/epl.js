@@ -2,35 +2,35 @@ const eplTeams = [
     {
         name: "Arsenal",
         location: "London (Holloway)",
-        topScorer: "Thierry Henry (175)",
+        topScorer: "Thierry Henry",
         value: "2.3B",
         photo: "https://www.planetsport.com/image-library/partners/rival/square/500/a/arsenal-defender-william-saliba-joins-nice-on-loan-for-rest-2a9def-sc.jpg",
     },
     {
         name: "Aston Villa",
         location: "Birmingham",
-        topScorer: "Gabriel Agbonlahor (73)",
+        topScorer: "Gabriel Agbonlahor",
         value: "198M",
         photo: "https://www.planetsport.com/image-library/square/500/v/villa-park-aston-villa-ground-view.jpg",
     },
     {
         name: "Bournemouth",
         location: "Bournemouth",
-        topScorer: "Joshua King (49)",
+        topScorer: "Joshua King",
         value: "100M",
         photo: "https://www.planetsport.com/image-library/square/500/a/afc-bournemouth-december-2015.jpg",
     },
     {
         name: "Brighton & Hove Albion",
         location: "Brighton",
-        topScorer: "Glenn Murray (28)",
+        topScorer: "Glenn Murray",
         value: "149M",
         photo: "https://www.planetsport.com/image-library/square/500/b/brighton-fans-outside-amex-august-2021.jpg",
     },
     {
         name: "Chelsea",
         location: "London",
-        topScorer: "Frank Lampard (147)",
+        topScorer: "Frank Lampard",
         value: "2.5B",
         photo: "https://www.planetsport.com/image-library/square/500/s/stamford-bridge-ground-view-corner-flag.jpg",
     },
@@ -44,35 +44,35 @@ const eplTeams = [
     {
         name: "Everton",
         location: "Liverpool (Walton)",
-        topScorer: "Romelu Lukaku (68)",
+        topScorer: "Romelu Lukaku",
         value: "392M",
         photo: "https://www.planetsport.com/image-library/square/500/e/everton-crest-goodison-park-stock.jpg",
     },
     {
         name: "Fulham",
         location: "London (Fulham)",
-        topScorer: "Clint Dempsey (50)",
+        topScorer: "Clint Dempsey",
         value: "123M",
         photo: "https://www.planetsport.com/image-library/square/500/a/a-general-view-of-a-corner-flag-on-the-pitch-ahead-of-the-premier-league-match-at-craven-cottage-london-picture-date-friday-april-9-2021.jpg",
     },
     {
         name: "Leeds United",
         location: "Leeds",
-        topScorer: "Mark Viduka (59)",
+        topScorer: "Mark Viduka",
         value: "209M",
         photo: "https://www.planetsport.com/image-library/square/500/e/elland-road-stadium-front.jpg",
     },
     {
         name: "Leicester City",
         location: "Leicester",
-        topScorer: "Jamie Vardy (134)",
+        topScorer: "Jamie Vardy",
         value: "355M",
         photo: "https://www.planetsport.com/image-library/square/500/l/leicester-city-premier-league-trophy-5-may-2016.jpg",
     },
     {
         name: "Liverpool",
         location: "Liverpool (Anfield)",
-        topScorer: "Robbie Fowler (128)",
+        topScorer: "Robbie Fowler",
         value: "3.1B",
         photo: "https://www.planetsport.com/image-library/square/500/l/liverpool-squad.jpg",
     },
@@ -86,14 +86,14 @@ const eplTeams = [
     {
         name: "Newcastle United",
         location: "Newcastle upon Tyne",
-        topScorer: "Alan Shearer (148)",
+        topScorer: "Alan Shearer",
         value: "202M",
         photo: "https://www.planetsport.com/image-library/square/500/n/newcastle-united-supporters-stock.jpg",
     },
     {
         name: "Tottenham Hotspur",
         location: "London (Tottenham)",
-        topScorer: "Harry Kane (195)",
+        topScorer: "Harry Kane",
         value: "2.1B",
         photo: "https://www.planetsport.com/image-library/square/500/s/spurs-crest.jpg",
     },
@@ -107,21 +107,21 @@ const eplTeams = [
     {
         name: "Wolverhampton Wanderers",
         location: "Wolverhampton",
-        topScorer: "Raul Jimenez (40)",
+        topScorer: "Raul Jimenez",
         value: "176M",
         photo: "https://www.planetsport.com/image-library/partners/rival/square/500/t/the-challenges-awaiting-bruno-lage-at-molineux-as-new-boss-t-4d3632-sc.jpg",
     },
     {
         name: "West Bromwich Albion",
         location: "West Bromwich",
-        topScorer: "Peter Odemwingie (30)",
+        topScorer: "Peter Odemwingie",
         value: "82M",
         photo: "https://www.planetsport.com/image-library/partners/rival/square/500/g/goalkeeper-josh-griffiths-signs-new-four-year-contract-at-we-5372d9-sc.jpg",
     },
     {
         name: "Southampton",
         location: "Southampton",
-        topScorer: "Matt Le Tissier (100)",
+        topScorer: "Matt Le Tissier",
         value: "153M",
         photo: "https://www.planetsport.com/image-library/square/500/s/st-marys-stadium-august-2019.jpg",
     }
@@ -136,6 +136,7 @@ for (let eplTeam of eplTeams) {
     const photoEl = document.createElement("img");
     photoEl.src = eplTeam.photo;
     photoEl.alt = eplTeam.name;
+    photoEl.classList.add("img");
 
     const nameEl = document.createElement("p");
     nameEl.innerText = eplTeam.name;
@@ -146,6 +147,7 @@ for (let eplTeam of eplTeams) {
 
     const topScorerEl = document.createElement("p");
     topScorerEl.innerText = "Top Scorer: " + eplTeam.topScorer;
+    topScorerEl.classList.add("scorer");
 
     const valueEl = document.createElement("p");
     valueEl.innerText = "Team Value: " + eplTeam.value;
